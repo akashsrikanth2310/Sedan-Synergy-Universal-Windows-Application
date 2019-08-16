@@ -1,0 +1,91 @@
+﻿<Page
+    x:Class="Sedansynergy.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Sedansynergy"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Height="739.624" Width="550.886">
+
+    <Grid x:Name="Login_Reg" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"  Margin="0,-30,0,30">
+        <Image Source="Assets/blur2.jpg" Stretch="UniformToFill"/>
+        <RelativePanel x:Name="loginpanel" HorizontalAlignment="Left" Height="312" Margin="110,220,0,0" VerticalAlignment="Top" Width="340">
+            <Image x:Name="image" HorizontalAlignment="Left" Height="61" Margin="0,0,-340,-61" VerticalAlignment="Top" Width="340" Source="Assets/login1.JPG"/>
+            <Image x:Name="image1" HorizontalAlignment="Left" Height="301" Margin="0,52,-342,-353" VerticalAlignment="Top" Width="342" Source="Assets/Capture.JPG"/>
+            <Image x:Name="image2" HorizontalAlignment="Left" Height="28" Margin="227,197,-304,-225" VerticalAlignment="Top" Width="77" Source="Assets/loginbutt.JPG" Tapped="loginclick"/>
+            <Image x:Name="image3" HorizontalAlignment="Left" Height="38" Margin="39,195,-141,-223" VerticalAlignment="Top" Width="102" Source="Assets/registerbutton1.JPG" Tapped="toregisterclick"/>
+            <RelativePanel HorizontalAlignment="Left" Height="33" Margin="24,129,-315,-156" VerticalAlignment="Top" Width="291" BorderBrush="#797979" BorderThickness="2,2,2,2">
+                <PasswordBox x:Name="textBox2" HorizontalAlignment="Left" Margin="39,1,-38,0" Width="246" PlaceholderText="  Password" BorderThickness="0" Foreground="Black" Height="22" VerticalAlignment="Top"/>
+                <Image x:Name="image5" HorizontalAlignment="Left" Height="24" Margin="9,4,-3,0" VerticalAlignment="Top" Width="25" Source="Assets/pass.JPG"/>
+            </RelativePanel>
+            <RelativePanel HorizontalAlignment="Left" Height="33" Margin="24,73,-315,-100" VerticalAlignment="Top" Width="291" BorderBrush="#7A7A7A" BorderThickness="2,2,2,2">
+                <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="40,1,-24,1" TextWrapping="Wrap" Text="" Width="245" PreventKeyboardDisplayOnProgrammaticFocus="True" PlaceholderText="  E-mail" BorderThickness="0" BorderBrush="Black"/>
+                <Image x:Name="image4" HorizontalAlignment="Left" Height="22" Margin="7,6,-3,-3" VerticalAlignment="Top" Width="25" Source="Assets/penc.JPG"/>
+            </RelativePanel>
+            <Button x:Name="textBox" HorizontalAlignment="Left" Content="" VerticalAlignment="Top" Width="263" Foreground="Black" BorderThickness="0" Margin="39,255,-39,-279" IsDoubleTapEnabled="False" IsRightTapEnabled="False"  IsTabStop="False" IsTapEnabled="False" Height="32" IsHoldingEnabled="False" IsTextScaleFactorEnabled="False" IsHitTestVisible="False" >
+                <Button.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </Button.Background>
+
+            </Button>
+        </RelativePanel>
+        <RelativePanel x:Name="reg1panel" HorizontalAlignment="Left" Height="502" Margin="110,142,0,-4" VerticalAlignment="Top" Width="340" Visibility="Collapsed">
+            <Image x:Name="image6" HorizontalAlignment="Left" Height="67" Margin="0,1,-340,-68" VerticalAlignment="Top" Width="340" Source="Assets/registerheader.JPG"/>
+            <Image x:Name="image6_Copy" HorizontalAlignment="Left" Height="372" Margin="0,68,-340,-440" VerticalAlignment="Top" Width="340" Source="Assets/registerbody.JPG"/>
+            <Image x:Name="image6_Copy1" HorizontalAlignment="Left" Height="34" Margin="227,385,-388,-419" VerticalAlignment="Top" Width="161" Source="Assets/nextbutton1.JPG" Tapped="nextclick"/>
+            <RelativePanel HorizontalAlignment="Left" Height="32" Margin="36,90,-310,-122" VerticalAlignment="Top" Width="274" BorderBrush="#7A7A7A" BorderThickness="2,2,2,2">
+                <TextBox x:Name="textBox3" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" Width="238" PreventKeyboardDisplayOnProgrammaticFocus="True" PlaceholderText="     User Name" Margin="33,0,-9,0" BorderThickness="0" Height="25" VerticalAlignment="Top"/>
+                <Image x:Name="image4_Copy" HorizontalAlignment="Left" Height="22" VerticalAlignment="Top" Width="25" Source="Assets/penc.JPG" Margin="12,3,-12,-3"/>
+            </RelativePanel>
+            <RelativePanel HorizontalAlignment="Left" Height="32" Margin="36,144,-310,-176" VerticalAlignment="Top" Width="274" BorderBrush="#7A7A7A" BorderThickness="2,2,2,2">
+                <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="232" PreventKeyboardDisplayOnProgrammaticFocus="True" PlaceholderText="      E-mail" Margin="30,0,0,0" BorderThickness="0"/>
+                <Image x:Name="image5_Copy3" HorizontalAlignment="Left" Height="24" VerticalAlignment="Top" Width="25" Source="Assets/email.JPG" Margin="12,3,-12,-27"/>
+            </RelativePanel>
+            <RelativePanel HorizontalAlignment="Left" Height="32" Margin="36,201,-310,-233" VerticalAlignment="Top" Width="274" BorderBrush="#7A7A7A" BorderThickness="2,2,2,2">
+                <TextBox x:Name="textBox5" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="232" PreventKeyboardDisplayOnProgrammaticFocus="True" PlaceholderText="      PhoneNumber" Margin="30,0,0,0" BorderThickness="0"/>
+                <Image x:Name="image5_Copy2" HorizontalAlignment="Left" Height="23" VerticalAlignment="Top" Width="25" Source="Assets/phone.JPG" Margin="15,3,-15,-3"/>
+            </RelativePanel>
+            <RelativePanel HorizontalAlignment="Left" Height="32" Margin="36,258,-310,-290" VerticalAlignment="Top" Width="274" BorderBrush="#7A7A7A" BorderThickness="2,2,2,2">
+                <PasswordBox x:Name="textBox6" HorizontalAlignment="Left" Height="20"  VerticalAlignment="Top" Width="232" PreventKeyboardDisplayOnProgrammaticFocus="True" PlaceholderText="      Password" Margin="30,0,0,0" BorderThickness="0"/>
+                <Image x:Name="image5_Copy" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="25" Source="Assets/pass.JPG" Margin="12,0,-12,0"/>
+            </RelativePanel>
+            <RelativePanel HorizontalAlignment="Left" Height="32" Margin="36,315,-310,-347" VerticalAlignment="Top" Width="274" BorderBrush="#7A7A7A" BorderThickness="2,2,2,2">
+                <PasswordBox x:Name="textBox7" HorizontalAlignment="Left" Height="20" VerticalAlignment="Top" Width="232" PreventKeyboardDisplayOnProgrammaticFocus="True" PlaceholderText="      Confirm Password" Margin="30,0,0,0" BorderThickness="0"/>
+                <Image x:Name="image5_Copy1" HorizontalAlignment="Left" Height="25" VerticalAlignment="Top" Width="25" Source="Assets/pass.JPG" Margin="12,0,-12,0"/>
+            </RelativePanel>
+            <Button x:Name="textBox_Copy" HorizontalAlignment="Left" Content="" VerticalAlignment="Top"  IsDoubleTapEnabled="False" IsRightTapEnabled="False" IsTabStop="False" IsTapEnabled="False"  Width="263" Foreground="Black" BorderThickness="0" Margin="39,451,-39,-477" Height="34" IsHitTestVisible="False" IsHoldingEnabled="False" IsTextScaleFactorEnabled="False">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </Button.Background>
+            </Button>
+            <Image x:Name="image6_Copy4" HorizontalAlignment="Left" Height="34" Margin="26,385,-164,-419" VerticalAlignment="Top" Width="138" Source="Assets/backtologin.JPG" Tapped="backtologin"/>
+        </RelativePanel>
+        <RelativePanel x:Name="reg2panel" HorizontalAlignment="Left" Height="502" Margin="110,133,0,0" VerticalAlignment="Top" Width="340" Visibility="Collapsed">
+            <Image x:Name="image7" HorizontalAlignment="Left" Height="67" Margin="0,10,-340,-77" VerticalAlignment="Top" Width="340" Source="Assets/CarDetailsheader.JPG"/>
+            <Image x:Name="image6_Copy2" HorizontalAlignment="Left" Height="372" Margin="0,68,-340,-440" VerticalAlignment="Top" Width="340" Source="Assets/registerbody.JPG"/>
+            <Image x:Name="image6_Copy3" HorizontalAlignment="Left" Height="34" Margin="206,385,-367,-419" VerticalAlignment="Top" Width="160" Source="Assets/registerbutton.JPG" Tapped="registerclick"/>
+            <RelativePanel HorizontalAlignment="Left" Height="32" Margin="36,93,-310,-125" VerticalAlignment="Top" Width="274" BorderBrush="#7A7A7A" BorderThickness="2,2,2,2">
+                <Image x:Name="image4_Copy1" HorizontalAlignment="Left" Height="22" VerticalAlignment="Top" Width="25" Source="Assets/penc.JPG" Margin="12,3,-12,-3"/>
+                <TextBox x:Name="textBox8" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="232" PreventKeyboardDisplayOnProgrammaticFocus="True" PlaceholderText="      Maker / Brand" Margin="30,0,0,0" BorderThickness="0"/>
+            </RelativePanel>
+            <RelativePanel HorizontalAlignment="Left" Height="32" Margin="36,150,-310,-182" VerticalAlignment="Top" Width="274" BorderBrush="#7A7A7A" BorderThickness="2,2,2,2">
+                <Image x:Name="image4_Copy2" HorizontalAlignment="Left" Height="22" VerticalAlignment="Top" Width="25" Source="Assets/penc.JPG" Margin="12,3,-12,-3"/>
+                <TextBox x:Name="textBox9" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="" Width="235" VerticalAlignment="Top" PreventKeyboardDisplayOnProgrammaticFocus="True" PlaceholderText="      Name of car" Margin="30,0,0,0" BorderThickness="0"/>
+            </RelativePanel>
+            <RelativePanel HorizontalAlignment="Left" Height="32" Margin="36,207,-310,-239" VerticalAlignment="Top" Width="274" BorderBrush="#7A7A7A" BorderThickness="2,2,2,2">
+                <Image x:Name="image4_Copy3" HorizontalAlignment="Left" Height="22" VerticalAlignment="Top" Width="25" Source="Assets/penc.JPG" Margin="12,3,-12,-3"/>
+                <TextBox x:Name="textBox10" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="226" PreventKeyboardDisplayOnProgrammaticFocus="True" PlaceholderText="      Mileage" Margin="36,0,0,0" BorderThickness="0"/>
+            </RelativePanel>
+            <RelativePanel HorizontalAlignment="Left" Height="32" Margin="36,264,-310,-296" VerticalAlignment="Top" Width="274" BorderBrush="#7A7A7A" BorderThickness="2,2,2,2">
+                <Image x:Name="image4_Copy4" HorizontalAlignment="Left" Height="22" VerticalAlignment="Top" Width="25" Source="Assets/penc.JPG" Margin="12,3,-12,-3"/>
+                <TextBox x:Name="textBox11" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="226" PreventKeyboardDisplayOnProgrammaticFocus="True" PlaceholderText="      Petrol / Deisel / Gas" Margin="30,0,0,0" BorderThickness="0"/>
+            </RelativePanel>
+            <Button x:Name="textBox_Copy1"  IsDoubleTapEnabled="False" IsRightTapEnabled="False"  IsTabStop="False" IsTapEnabled="False"  HorizontalAlignment="Left" Content="" VerticalAlignment="Top" Width="263" Foreground="Black" BorderThickness="0" Margin="39,453,-39,-478" Height="33">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </Button.Background>
+            </Button>
+        </RelativePanel>
+
+    </Grid>
+</Page>

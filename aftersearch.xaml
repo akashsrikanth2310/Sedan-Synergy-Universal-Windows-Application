@@ -1,0 +1,123 @@
+﻿<Page
+    x:Class="Sedansynergy.aftersearch"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Sedansynergy"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d" Height="739.624" Width="550.886">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Image Source="Assets/blur2.jpg" Stretch="UniformToFill" Margin="-2,-1,2,1"/>
+        <RelativePanel x:Name="onesearch" HorizontalAlignment="Left" Height="616" Margin="37,48,0,0" VerticalAlignment="Top" Width="416" Visibility="Collapsed">
+            <TextBox x:Name="textBox11" HorizontalAlignment="Left" Height="34" Margin="47,95,-328,-97" TextWrapping="Wrap" Text="Name : " VerticalAlignment="Top" Width="352" AcceptsReturn="True" BorderThickness="0" FontSize="18">
+                <TextBox.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="textBox21" HorizontalAlignment="Left" Height="34" Margin="47,145,-328,-147" TextWrapping="Wrap" Text="Starting Place : " VerticalAlignment="Top" Width="352" AcceptsReturn="True" BorderThickness="0" FontSize="18">
+                <TextBox.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="textBox31" HorizontalAlignment="Left" Height="34" Margin="47,200,-328,-202" TextWrapping="Wrap" Text="Destination : " VerticalAlignment="Top" Width="352" AcceptsReturn="True" BorderThickness="0" FontSize="18">
+                <TextBox.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="textBox41" HorizontalAlignment="Left" Height="34" Margin="47,255,-328,-257" TextWrapping="Wrap" Text="Car : " VerticalAlignment="Top" Width="352" AcceptsReturn="True" BorderThickness="0" FontSize="18">
+                <TextBox.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="textBox51" HorizontalAlignment="Left" Height="34" Margin="47,305,-328,-307" TextWrapping="Wrap" Text="Time : " VerticalAlignment="Top" Width="352" AcceptsReturn="True" BorderThickness="0" FontSize="18">
+                <TextBox.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="textBox61" HorizontalAlignment="Left" Height="34" Margin="47,355,-328,-357" TextWrapping="Wrap" Text="No of Persons Allowed : " VerticalAlignment="Top" Width="352" AcceptsReturn="True" BorderThickness="0" FontSize="18">
+                <TextBox.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="textBox71" HorizontalAlignment="Left" Height="34" Margin="47,410,-328,-412" TextWrapping="Wrap" Text="Approximate Fare : " VerticalAlignment="Top" Width="352" AcceptsReturn="True" BorderThickness="0" FontSize="18">
+                <TextBox.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+        </RelativePanel>
+        <RelativePanel x:Name="twosearch" HorizontalAlignment="Left" Height="616" Margin="1,48,0,0" VerticalAlignment="Top" Width="548">
+            <TextBox x:Name="textBox211" HorizontalAlignment="Left" Height="34" Margin="2,110,-209,-112" TextWrapping="Wrap" Text="Name : " VerticalAlignment="Top" Width="278" AcceptsReturn="True" BorderThickness="0" FontSize="18">
+                <TextBox.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="textBox221" HorizontalAlignment="Left" Height="34" Margin="2,160,-209,-162" TextWrapping="Wrap" Text="Starting Place : " VerticalAlignment="Top" Width="278" AcceptsReturn="True" BorderThickness="0" FontSize="18">
+                <TextBox.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="textBox231" HorizontalAlignment="Left" Height="34" Margin="2,215,-209,-217" TextWrapping="Wrap" Text="Destination : " VerticalAlignment="Top" Width="278" AcceptsReturn="True" BorderThickness="0" FontSize="18">
+                <TextBox.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="textBox241" HorizontalAlignment="Left" Height="34" Margin="2,270,-209,-272" TextWrapping="Wrap" Text="Car : " VerticalAlignment="Top" Width="278" AcceptsReturn="True" BorderThickness="0" FontSize="18">
+                <TextBox.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="textBox251" HorizontalAlignment="Left" Height="34" Margin="2,320,-209,-322" TextWrapping="Wrap" Text="Time : " VerticalAlignment="Top" Width="278" AcceptsReturn="True" BorderThickness="0" FontSize="18">
+                <TextBox.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="textBox261" HorizontalAlignment="Left" Height="34" Margin="2,370,-209,-372" TextWrapping="Wrap" Text="No of Persons Allowed : " VerticalAlignment="Top" Width="278" AcceptsReturn="True" BorderThickness="0" FontSize="18">
+                <TextBox.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="textBox271" HorizontalAlignment="Left" Height="34" Margin="2,425,-209,-427" TextWrapping="Wrap" Text="Approximate Fare : " VerticalAlignment="Top" Width="278" AcceptsReturn="True" BorderThickness="0" FontSize="18">
+                <TextBox.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="textBox212" HorizontalAlignment="Left" Height="34" Margin="293,110,-474,-112" TextWrapping="Wrap" Text="Name : " VerticalAlignment="Top" Width="252" AcceptsReturn="True" BorderThickness="0" FontSize="18">
+                <TextBox.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="textBox222" HorizontalAlignment="Left" Height="34" Margin="293,160,-474,-162" TextWrapping="Wrap" Text="Starting Place : " VerticalAlignment="Top" Width="252" AcceptsReturn="True" BorderThickness="0" FontSize="18">
+                <TextBox.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="textBox232" HorizontalAlignment="Left" Height="34" Margin="293,215,-474,-217" TextWrapping="Wrap" Text="Destination : " VerticalAlignment="Top" Width="252" AcceptsReturn="True" BorderThickness="0" FontSize="18">
+                <TextBox.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="textBox242" HorizontalAlignment="Left" Height="34" Margin="293,270,-474,-272" TextWrapping="Wrap" Text="Car : " VerticalAlignment="Top" Width="252" AcceptsReturn="True" BorderThickness="0" FontSize="18">
+                <TextBox.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="textBox252" HorizontalAlignment="Left" Height="34" Margin="293,320,-474,-322" TextWrapping="Wrap" Text="Time : " VerticalAlignment="Top" Width="252" AcceptsReturn="True" BorderThickness="0" FontSize="18">
+                <TextBox.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="textBox262" HorizontalAlignment="Left" Height="34" Margin="293,370,-474,-372" TextWrapping="Wrap" Text="No of Persons Allowed : " VerticalAlignment="Top" Width="252" AcceptsReturn="True" BorderThickness="0" FontSize="18">
+                <TextBox.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+            <TextBox x:Name="textBox272" HorizontalAlignment="Left" Height="34" Margin="293,425,-474,-427" TextWrapping="Wrap" Text="Approximate Fare : " VerticalAlignment="Top" Width="252" AcceptsReturn="True" BorderThickness="0" FontSize="18">
+                <TextBox.Background>
+                    <ImageBrush Stretch="Fill"/>
+                </TextBox.Background>
+            </TextBox>
+        </RelativePanel>
+
+    </Grid>
+</Page>

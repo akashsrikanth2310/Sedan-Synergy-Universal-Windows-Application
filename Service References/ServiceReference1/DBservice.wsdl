@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="InsertData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="phonenumber" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="brand" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="model" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="mileage" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="variant" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertDataResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="logincheck">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="logincheckResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="logincheckResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setride">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="startingplace" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="destination" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="startingplacelat" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="startingplacelong" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="destlat" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="destlong" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="hrs" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="min" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="day" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="month" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cap" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setrideResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="searchride">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="startingplace" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="destination" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="startingplacelat" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="startingplacelong" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="destlat" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="destlong" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="hrs" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="min" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="day" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="month" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="year" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="cap" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="searchrideResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="arraything">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="currdate" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="curryear" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="currmonth" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="arraythingResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="arrlength">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="currdate" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="arrlengthResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="arrlengthResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InsertDataSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertData" />
+  </wsdl:message>
+  <wsdl:message name="InsertDataSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="logincheckSoapIn">
+    <wsdl:part name="parameters" element="tns:logincheck" />
+  </wsdl:message>
+  <wsdl:message name="logincheckSoapOut">
+    <wsdl:part name="parameters" element="tns:logincheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="setrideSoapIn">
+    <wsdl:part name="parameters" element="tns:setride" />
+  </wsdl:message>
+  <wsdl:message name="setrideSoapOut">
+    <wsdl:part name="parameters" element="tns:setrideResponse" />
+  </wsdl:message>
+  <wsdl:message name="searchrideSoapIn">
+    <wsdl:part name="parameters" element="tns:searchride" />
+  </wsdl:message>
+  <wsdl:message name="searchrideSoapOut">
+    <wsdl:part name="parameters" element="tns:searchrideResponse" />
+  </wsdl:message>
+  <wsdl:message name="arraythingSoapIn">
+    <wsdl:part name="parameters" element="tns:arraything" />
+  </wsdl:message>
+  <wsdl:message name="arraythingSoapOut">
+    <wsdl:part name="parameters" element="tns:arraythingResponse" />
+  </wsdl:message>
+  <wsdl:message name="arrlengthSoapIn">
+    <wsdl:part name="parameters" element="tns:arrlength" />
+  </wsdl:message>
+  <wsdl:message name="arrlengthSoapOut">
+    <wsdl:part name="parameters" element="tns:arrlengthResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DBserviceSoap">
+    <wsdl:operation name="InsertData">
+      <wsdl:input message="tns:InsertDataSoapIn" />
+      <wsdl:output message="tns:InsertDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="logincheck">
+      <wsdl:input message="tns:logincheckSoapIn" />
+      <wsdl:output message="tns:logincheckSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setride">
+      <wsdl:input message="tns:setrideSoapIn" />
+      <wsdl:output message="tns:setrideSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="searchride">
+      <wsdl:input message="tns:searchrideSoapIn" />
+      <wsdl:output message="tns:searchrideSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="arraything">
+      <wsdl:input message="tns:arraythingSoapIn" />
+      <wsdl:output message="tns:arraythingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="arrlength">
+      <wsdl:input message="tns:arrlengthSoapIn" />
+      <wsdl:output message="tns:arrlengthSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DBserviceSoap" type="tns:DBserviceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertData">
+      <soap:operation soapAction="http://tempuri.org/InsertData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="logincheck">
+      <soap:operation soapAction="http://tempuri.org/logincheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setride">
+      <soap:operation soapAction="http://tempuri.org/setride" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchride">
+      <soap:operation soapAction="http://tempuri.org/searchride" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="arraything">
+      <soap:operation soapAction="http://tempuri.org/arraything" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="arrlength">
+      <soap:operation soapAction="http://tempuri.org/arrlength" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DBserviceSoap12" type="tns:DBserviceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertData">
+      <soap12:operation soapAction="http://tempuri.org/InsertData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="logincheck">
+      <soap12:operation soapAction="http://tempuri.org/logincheck" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setride">
+      <soap12:operation soapAction="http://tempuri.org/setride" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchride">
+      <soap12:operation soapAction="http://tempuri.org/searchride" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="arraything">
+      <soap12:operation soapAction="http://tempuri.org/arraything" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="arrlength">
+      <soap12:operation soapAction="http://tempuri.org/arrlength" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DBservice">
+    <wsdl:port name="DBserviceSoap" binding="tns:DBserviceSoap">
+      <soap:address location="http://teammfap.somee.com/DBservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DBserviceSoap12" binding="tns:DBserviceSoap12">
+      <soap12:address location="http://teammfap.somee.com/DBservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
